@@ -63,27 +63,28 @@ export default {
         // width: 1300px;
         margin: 0 auto;
         ul {
-          margin-top: 23px;
           width: 100%;
           height: auto;
           display: inline-block;
           li {
-            margin: 20px auto;
+            margin: 72px auto 0;
             /* float: left; */
             display: inline-block;
             /* width: 600px; */
             height: auto;
             width: 90%;
+
             /* right: 0; */
             /* left: 0; */
             .techShare-title {
-              font-size: 29px;
+              font-weight: 300;
+              font-size: 24px;
               color: #ffffff;
               letter-spacing: 0;
               text-align: center;
             }
             .techShare-text {
-              margin-top: 8px;
+              margin-top: 13px;
               font-size: 13px;
               color: #ffffff;
               letter-spacing: 0.64px;
@@ -135,6 +136,7 @@ export default {
               color: #ffffff;
               letter-spacing: 0;
               text-align: center;
+              font-weight: 300;
             }
             .techShare-text {
               margin-top: 7px;
@@ -173,13 +175,13 @@ export default {
           display: inline-block;
           width: 1320px;
           margin: 115px auto 0;
+          :nth-child(2n) {
+            float: right;
+          }
           li {
             margin: 54px 0;
             float: left;
             width: 600px;
-            &:nth-child(2n) {
-              float: right;
-            }
             .techShare-text {
               margin-top: 40px;
               padding-bottom: 0px;

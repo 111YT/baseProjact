@@ -46,6 +46,7 @@ export default {
         margin-top: 30px;
         width: 90%;
         margin: 30px auto 0;
+        font-weight: 300;
       }
       ul {
         li {
@@ -92,6 +93,7 @@ export default {
         letter-spacing: 1.5px;
         margin-top: 30px;
         width: 90%;
+        font-weight: 300;
         // margin: 30px auto 0;
       }
       ul {

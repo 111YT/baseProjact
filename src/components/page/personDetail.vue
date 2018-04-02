@@ -1,11 +1,11 @@
 <template>
     <div class="personDetail">
-        <topnav></topnav>
-        <Row>
+        <topnav :bluesee=2></topnav>
+        <Row justify="center">
           <Col span="12">
-          <div class="imgBox">
-               <img src="./../../assets/img/person.jpg" alt="">
-          </div>
+            <div class="imgBox">
+                <img src="./../../assets/img/eight.jpg" alt="">
+            </div>
           </Col>
           <Col span="12">
           <div class="personTitle">
@@ -31,7 +31,7 @@ export default {
 .personDetail {
   padding-bottom: 1px;
   height: 100vh;
-  background: #F5F5F5;
+  background: #f5f5f5;
   .ivu-row {
     width: 100%;
     height: ~"calc(100% - 101px)";
@@ -40,34 +40,39 @@ export default {
     height: 100%;
     width: 50%;
     overflow: hidden;
-    .imgBox{
-      img {
+    .imgBox {
+      background-image: url("../../assets/img/eight.jpg");
       background-size: 100% 100%;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
       background-repeat: no-repeat;
+      height: 100%;
       width: 100%;
-      /* height: 100%; */
+      img{
+        display: none;
       }
     }
-    .personTitle{
+    .personTitle {
       margin-top: 25%;
-      h2{
+      h2 {
         font-size: 64px;
-  color: #000000;
-  margin-bottom: 80px;
-  letter-spacing: 0.93px;
-  text-align: center;
-  line-height: 90px;
-  font-weight: normal;
+        color: #000000;
+        margin-bottom: 80px;
+        letter-spacing: 0.93px;
+        text-align: center;
+        line-height: 90px;
+        font-weight: normal;
       }
-      p{
-
+      p {
         display: inline-block;
         width: 80%;
         font-size: 24px;
-color: #4A4A4A;
-letter-spacing: 0.86px;
-text-align: center;
-line-height: 36px;
+        color: #4a4a4a;
+        letter-spacing: 0.86px;
+        text-align: center;
+        line-height: 36px;
       }
     }
   }
@@ -75,6 +80,43 @@ line-height: 36px;
 
 @media screen and (max-width: 768px) {
   .personDetail {
+    .ivu-col-span-12 {
+      width: 100%;
+      height: auto;
+      margin: 20px auto 0;
+      .imgBox {
+        background-image:none;
+        width: 88%;
+        margin: 0 auto;
+        height: 100%;
+        // background-image: url("../../assets/img/eight.jpg");
+        img{
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+        }
+      }
+      .personTitle {
+        margin-top: 8%;
+        h2 {
+          margin-bottom: 16px;
+          font-size: 24px;
+          color: #000000;
+          letter-spacing: 0.35px;
+          text-align: center;
+          line-height: 33px;
+        }
+        p {
+          font-size: 12px;
+          color: #666666;
+          letter-spacing: -0.39px;
+          text-align: center;
+          line-height: 24px;
+        }
+      }
+    }
   }
 }
 

@@ -55,6 +55,7 @@ export default {
             width: 100%;
             padding-bottom: 67px;
             .techShareMore-title {
+              font-weight: 300;
               margin-top: 44px;
               font-size: 36px;
               color: #ffffff;
@@ -104,6 +105,7 @@ export default {
             width: 100%;
             padding-bottom: 67px;
             .techShareMore-title {
+              font-weight: 300;
               margin-top: 44px;
               font-size: 48px;
               color: #ffffff;

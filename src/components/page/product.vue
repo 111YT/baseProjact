@@ -6,20 +6,20 @@
    <div class="poductDetail-ct">
      <div class="detilL">
        <div class="detailImg">
-         <img src="../../assets/img/phone.png" alt="">
+         <img src="../../assets/img/headerPort.png" alt="">
        </div>
        <div class="detailTitle">MiHotel项目</div>
        <div class="detailTwo">UI设计作为整个项目工作中的第一部分主要通过设计师</div>
-       <router-link to="/poductMore">
-          <div class="detailMore">更多>>></div>
+       <router-link to="/productList">
+          <div class="detailMore">更多>></div>
        </router-link>
 
      </div>
      <div class="detailR">
        <div class="detailR-box">
-       <p><b>掌握</b>HTML是网页的核心，是一种制作万维网页面的标准语言，是万维网浏览器使用的一种语言掌握HTML是网页的核心，是一种制作万维网页面的标准语网页面的标准语言，是万维网浏览器使用的一种语言掌握HTML是网页的核心，是一种制言，是万维网浏览器使用的一种语言是万维网浏览器使用的一种语言掌握HTML是网页的核心，是一种制作万维网页面的标准语言，是万维网浏览器使用的一种语言是万维网浏览器使用的一种语言掌握HTML是网页的核心，是一种制作万维网页面的标准语言，是万维网浏览器使用的一种语言是万维网浏览器使用的一种语言掌握HTML是网页的核</p>
+       <p><b>掌握</b>HTML是网页的核心，是一种制作万维网页面的标准语言，是万维网浏览器使用的一种语言掌握HTML是网页的核心，是一种制作万维网页面的标准语网页面的标准语言，是万维网浏览器使用的一种语言掌握HTML是网页的核心，是一种制言，是万维网浏览器使用的一种语言是万维网浏览器使用的一种语言掌握HTML是网页的核心，是一种制作万维网页面的标准语言，是万维网浏览器使用的一种语言是万维网浏览器使用的一种语言掌握HTML是网页的核心，是一种制作万维网页面的标准语言，是万维网浏览器使用的一种语言是万维网浏览器使用的一种语言掌握HTML是网页的核心。</p>
        <div class="detailR-img">
-         <img src="" alt="">
+         <img src="../../assets/img/textImg.png" alt="">
        </div>
        </div>
      </div>
@@ -60,15 +60,20 @@ export default {
         border-radius: 100px;
         overflow: hidden;
         margin-top: 185px;
+        img {
+          width: 100%;
+        }
       }
       .detailTitle {
         margin-top: 35px;
         font-size: 48px;
         color: #fdfbfd;
         letter-spacing: 0.7px;
+        font-weight: 300;
       }
       .detailTwo {
-        margin-top: 20px;
+        width: 57%;
+        margin: 20px auto 0;
         font-size: 18px;
         color: #ffffff;
         letter-spacing: 0.54px;
@@ -113,8 +118,10 @@ export default {
       .detailR-img {
         width: 100%;
         height: auto;
-        margin: 60px auto 0;
-        background-color: red;
+        margin: 50px auto 0;
+        img {
+          width: 100%;
+        }
       }
     }
   }

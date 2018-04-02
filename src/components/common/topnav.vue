@@ -1,22 +1,43 @@
 <template>
    <header class="top-box">
+<!-- 右边栏导航 -->
+<div class="mask-box" :class="{noseeRight:this.showFour == false}">
+  <div class="mask-ct">
+    <div class="search-box">
+        <input type="text" name="" id="" placeholder="搜索您想要的内容">
+        <Icon type="ios-search-strong" class="searchIcon"></Icon>
+    </div>
+    <ul>
+      <li :class="{blubg:bluesee==1}" >产品/项目</li>
+      <li :class="{blubg:bluesee==2}">团队</li>
+      <li :class="{blubg:bluesee==3}">活动／技术分享</li>
+      <li :class="{blubg:bluesee==4}">投诉/建议</li>
+      <li :class="{blubg:bluesee==5}">联系方式</li>
+    </ul>
+  </div>
+  <div class="forks" @click='shownavs(2)'>
+    <Icon type="android-close"></Icon>
+
+  </div>
+</div>
      <Menu mode='horizontal' class="headerbox">
         <div class="layout-logo">Logo</div>
-        <div class="lavout-manu" @click="shownavs" >
+        <div class="lavout-manu" @click="shownavs(1)" >
           <Icon class="iconmanu" type="navicon"></Icon>
         </div>
         <div class="layout-nav nosee">
-
             <MenuItem name='1' class="nav-li" :class="{blunav:bluesee==1}" >产品/项目</MenuItem>
             <MenuItem name='2' class="nav-li" :class="{blunav:bluesee==2}" >团队</MenuItem>
           <router-link to="/teachShare">
             <MenuItem name='3' class="nav-li" :class="{blunav:bluesee==3}"  >活动／技术分享</MenuItem>
           </router-link>
-          <router-link to='/showtwo'>
+          <!-- <router-link to='/showtwo'>
              <MenuItem name='4' class="nav-li" v-if='this.showFour'>投诉/建议</MenuItem>
-        </router-link>
+        </router-link> -->
         </div>
      </Menu>
+
+
    </header>
 </template>
 
@@ -27,39 +48,21 @@ export default {
   },
   data() {
     return {
-      showdown: false,
       showFour: false
     };
   },
   methods: {
-    shownavs() {
+    shownavs(value) {
       var screenWidth = document.querySelectorAll(".headerbox")[0].offsetWidth;
-      console.log(screenWidth);
-      this.showdown = !this.showdown;
       if (screenWidth < 768) {
-        if (this.showdown == true) {
+        if(value==1){
           this.showFour = true;
-          document.querySelectorAll(".layout-nav")[0].classList.remove("nosee");
-          document.querySelectorAll(".layout-nav")[0].classList.add("showNav");
-          document
-            .querySelectorAll(".headerbox")[0]
-            .classList.add("showhearder");
-          console.log("111");
-        } else {
-          document.querySelectorAll(".layout-nav")[0].classList.add("nosee");
-          document
-            .querySelectorAll(".layout-nav")[0]
-            .classList.remove("showNav");
-          document
-            .querySelectorAll(".headerbox")[0]
-            .classList.remove("showhearder");
+        }else{
+          this.showFour = false;
         }
       } else {
         this.showFour = false;
-        if (this.showdown == true) {
-          this.$router.push({ path: "/showtwo" });//这是菜单图标的跳转路由
-        } else {
-        }
+
       }
     }
   }
@@ -105,6 +108,9 @@ export default {
         }
       }
     }
+    .mask-box{
+      display: none;
+    }
   }
 }
 @media screen and (width: 768px) {
@@ -120,6 +126,7 @@ export default {
     // height: 232px;
     .headerbox {
       height: 60px;
+      z-index: 100;
       .layout-logo {
         float: left;
         margin-left: 40px;
@@ -142,13 +149,14 @@ export default {
             border-bottom: none;
           }
         }
-                .blunav {
+        .blunav {
           color: #2d8cf0 !important;
         }
       }
       .nosee {
         display: none;
       }
+
       .lavout-manu {
         float: right;
         height: 40px;
@@ -160,6 +168,64 @@ export default {
         }
       }
     }
+    .mask-box {
+      width: 100%;
+      height: 100%;
+      background: rgba(1, 1, 1, 0.7);
+      position: fixed;
+      z-index: 200;
+      .mask-ct {
+        float: right;
+        width: 260px;
+        height: 100%;
+        background-color: #fff;
+        .search-box {
+          width: 219px;
+          margin: 0 auto;
+          border-bottom: 1px solid #dbdbdb;
+
+          input {
+            margin: 10px 0 5px 0;
+            width: 200px;
+            height: 30px;
+            border: none;
+            padding-left: 10px;
+          }
+          .searchIcon {
+            font-size: 20px;
+          }
+        }
+        ul {
+          text-align: left;
+          width: 100%;
+          height: auto;
+          li {
+            color: #151515;
+            line-height: 62px;
+            padding-left: 25px;
+            height: 60px;
+          }
+          .bluebg {
+            background-color: #5888fb;
+            color: #fff;
+          }
+        }
+      }
+      .forks {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        float: right;
+        margin: 9px 29px 0 0;
+        i {
+          font-size: 41px;
+          color: #5888fb;
+        }
+      }
+    }
+          .noseeRight{
+        display: none;
+      }
   }
 }
 .showNav {

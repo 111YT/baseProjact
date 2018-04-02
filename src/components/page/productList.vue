@@ -3,6 +3,7 @@
         <topnav :bluesee=1></topnav>
          <div class="product-content">
           <Row justify="center" style="padding-bottom: 35px;">
+                  <router-link to="/versionInfor">
             <Col span='4':sm='6'>
               <div class="list-header">
                 <img src="../../assets/img/phone.png" alt="">
@@ -15,11 +16,11 @@
               <div class="list-box">
                   <div class="list-title">MiHotel项目</div>
                   <div class="list-text">UI设计作为整个项目工作中的第一UI设计作为整个项目</div>
-                  <router-link to="/versionInfor">
                   <div class="list-more">More+</div>
-                  </router-link>
               </div>
           </Col>
+                  </router-link>
+                  <router-link to="/versionInfor">
             <Col span='4':sm='6'>
               <div class="list-header">
                 <img src="../../assets/img/phone.png" alt="">
@@ -32,11 +33,11 @@
               <div class="list-box">
                   <div class="list-title">MiHotel项目</div>
                   <div class="list-text">UI设计作为整个项目工作中的第一UI设计作为整个项目</div>
-                  <router-link to="/versionInfor">
                   <div class="list-more">More+</div>
-                  </router-link>
               </div>
           </Col>
+                  </router-link>
+                  <router-link to="/versionInfor">
             <Col span='4':sm='6'>
               <div class="list-header">
                 <img src="../../assets/img/phone.png" alt="">
@@ -49,11 +50,11 @@
               <div class="list-box">
                   <div class="list-title">MiHotel项目</div>
                   <div class="list-text">UI设计作为整个项目工作中的第一UI设计作为整个项目</div>
-                  <router-link to="/versionInfor">
                   <div class="list-more">More+</div>
-                  </router-link>
               </div>
           </Col>
+                  </router-link>
+                  <router-link to="/versionInfor">
             <Col span='4':sm='6'>
               <div class="list-header">
                 <img src="../../assets/img/phone.png" alt="">
@@ -66,11 +67,11 @@
               <div class="list-box">
                   <div class="list-title">MiHotel项目</div>
                   <div class="list-text">UI设计作为整个项目工作中的第一UI设计作为整个项目</div>
-                  <router-link to="/versionInfor">
                   <div class="list-more">More+</div>
-                  </router-link>
               </div>
           </Col>
+                  </router-link>
+                  <router-link to="/versionInfor">
             <Col span='4' :sm='6'>
               <div class="list-header">
                 <img src="../../assets/img/phone.png" alt="">
@@ -83,11 +84,11 @@
               <div class="list-box">
                   <div class="list-title">MiHotel项目</div>
                   <div class="list-text">UI设计作为整个项目工作中的第一UI设计作为整个项目</div>
-                  <router-link to="/versionInfor">
                   <div class="list-more">More+</div>
-                  </router-link>
               </div>
           </Col>
+                  </router-link>
+                  <router-link to="/versionInfor">
             <Col span='4':sm='6'>
               <div class="list-header">
                 <img src="../../assets/img/phone.png" alt="">
@@ -100,11 +101,11 @@
               <div class="list-box">
                   <div class="list-title">MiHotel项目</div>
                   <div class="list-text">UI设计作为整个项目工作中的第一UI设计作为整个项目</div>
-                  <router-link to="/versionInfor">
                   <div class="list-more">More+</div>
-                  </router-link>
               </div>
           </Col>
+                  </router-link>
+                  <router-link to="/versionInfor">
             <Col span='4':sm='6'>
               <div class="list-header">
                 <img src="../../assets/img/phone.png" alt="">
@@ -117,11 +118,11 @@
               <div class="list-box">
                   <div class="list-title">MiHotel项目</div>
                   <div class="list-text">UI设计作为整个项目工作中的第一UI设计作为整个项目</div>
-                  <router-link to="/versionInfor">
                   <div class="list-more">More+</div>
-                  </router-link>
               </div>
           </Col>
+                  </router-link>
+                  <router-link to="/versionInfor">
             <Col span='4' :sm='6'>
               <div class="list-header">
                 <img src="../../assets/img/phone.png" alt="">
@@ -134,11 +135,10 @@
               <div class="list-box">
                   <div class="list-title">MiHotel项目</div>
                   <div class="list-text">UI设计作为整个项目工作中的第一UI设计作为整个项目</div>
-                  <router-link to="/versionInfor">
                   <div class="list-more">More+</div>
-                  </router-link>
               </div>
           </Col>
+                  </router-link>
           </Row>
          </div>
    </div>

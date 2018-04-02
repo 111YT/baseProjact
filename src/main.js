@@ -5,6 +5,10 @@ import App from './App'
 import router from './router'
 import iView from 'iview'; // 导入组件库
 import 'iview/dist/styles/iview.css'; // 导入样式
+import '../static/font/iconfont.css'
+import '../src/assets/css/base.css'
+
+
 
 Vue.use(iView);
 Vue.config.productionTip = false

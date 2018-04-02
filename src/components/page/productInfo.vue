@@ -43,6 +43,7 @@ export default {
         color: #4a4a4a;
         letter-spacing: 1.5px;
         margin-top: 45px;
+        font-weight: 300;
       }
       ul {
         margin: 20px 0 15px;
@@ -89,6 +90,7 @@ export default {
       text-align: left;
       .product-top {
         font-size: 64px;
+        font-weight: 300;
       }
       ul {
         margin: 20px 0 15px;
@@ -132,6 +134,7 @@ export default {
         color: #4a4a4a;
         letter-spacing: 1.5px;
         margin-top: 45px;
+        font-weight: 300;
       }
       ul {
         margin: 20px 0 15px;

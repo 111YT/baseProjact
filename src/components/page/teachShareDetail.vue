@@ -7,7 +7,7 @@
        <div class="techDetail-two">作者：&nbsp;绍敏&nbsp;发布时间：2018-01-25&nbsp;18:16:26</div>
        <div class="techDetail-text">掌握HTML是网页的核心，是一种制作万维网页面的标准语言，是万维网浏览器使用的一种语言掌握HTML是网页的核心，是一种制作万维网页面的标准语言，是万维网浏览器使用的一种语言是万维网浏览器使用的一种语言掌握HTML是网页的核心，是一种制作万维网页面的标准语言掌握HTML是网页的核心，是一种制作万维网页面的标准语言，是万维网浏览器使用的一种语言掌握HTML是网页的核心，是一种制作万维网页面的标准语言。</div>
        <div class="techDetail-img">
-         <img src="" alt="">
+         <img src="../../assets/img/textImg.png" alt="">
        </div>
      </div>
    </div>
@@ -45,6 +45,7 @@ export default {
         font-size: 48px;
         color: #4a4a4a;
         letter-spacing: 1.71px;
+        font-weight: 300;
       }
       .techDetail-two {
         margin: 5px 0 37px;
@@ -65,7 +66,11 @@ export default {
         margin-top: 60px;
         width: 100%;
         height: 433px;
-        background-color: red;
+        overflow: hidden;
+        img{
+          width: 100%;
+          // height: 100%;
+        }
       }
     }
   }
@@ -79,6 +84,7 @@ export default {
         width: 90%;
         .techDetail-title {
           font-size: 36px;
+          font-weight: 300;
         }
         .techDetail-two {
           margin: 5px 0 21px;
